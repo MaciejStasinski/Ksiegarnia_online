@@ -1,0 +1,9 @@
+2021-01-27 23:11:10 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "KSIAZKA" nie istnieje
+Table "KSIAZKA" not found; SQL statement:
+insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka_Foto) VALUES (1, 'Mróz Remigiusz', 27.93, 'Kryminał, sensacja, thriller', 'Kontynuacja bestsellerowej Nieodnalezionej!
+Rok po ucieczce od męża Kasandra Reimann prowadzi spokojne, ustatkowane życie za granicą. Jest przekonana, że udało jej się zostawić wszystko za sobą – także konsekwencje tego, co zrobiła, by ratować siebie i dziecko. Do czasu. Pewnego dnia jej syn nie wraca do domu po wizycie u kolegi, a jedyny ślad prowadzi do Opola. Zrozpaczona matka zrobi wszystko, by odnaleźć dziecko, nawet jeśli będzie oznaczało to ponowne spotkanie z człowiekiem, którego życie zniszczyła.
+Damian Werner tymczasem wprowadza się do nowego mieszkania, wciąż starając się zapomnieć o wszystkim, co spotkało go rok temu. Przeglądając jednak rzeczy zostawione przez poprzedniego właściciela, trafia na starą kasetę VHS, która rzuca nowe światło na jego przeszłość…',
+                                                                                               'Nieodgadniona',
+                                                                                               'Kontynuacja bestsellerowej Nieodnalezionej!
+                                                                                               Rok po ucieczce od męża Kasandra Reimann prowadzi spokojne, ustatkowane życie za granicą. Jest przekonana, że udało jej się zostawić wszystko za sobą – także konsekwencje tego, co zrobiła, by ratować siebie i dziecko.', 'https://ecsmedia.pl/c/nieodgadniona-b-iext53817927.jpg') [42102-200]

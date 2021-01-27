@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Twoje Zamówienie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron home-jumbo">
+        <div class="container text-center text-white jumbo-container">
+            <h1 class="display-3">Twoje zamówienie</h1>
+            <a th:href="@{/}">Strona główna</a>
+        </div>
+    </div>
+    <div class="col-6 offset-3" >
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nazwa</th>
+                <th scope="col">Cena</th>
+            </tr>
+            </thead>
+            <tbody th:remove="all-but-first">
+            <tr th:each="ksiazka, idx: ${zamowienie.ksiazka}">
+                <th scope="row" th:text="${idx.index+1}">1</th>
+                <td th:text="${ksiazka.tytul}">ksiazka 1</td>
+                <td th:text="|${ksiazka.cena}zł|">cena 16 zł</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>ksiazka2</td>
+                <td>cena</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>ksiazka 3</td>
+                <td>cena </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="text-right">
+            <h5 th:text="|Do zapłaty: ${#numbers.formatDecimal(sum,1,2,'COMMA')}zł|">łączna cena: 128 zł</h5>
+        </div>
+        <form action="#" th:action="@{/zamowienie/realizuj}" method="post">
+            <div class="form-group">
+                <label for="addressInput">Adres</label>
+                <input type="text" class="form-control" id="addressInput" name="address" placeholder="Podaj adres">
+            </div>
+            <div class="form-group">
+                <label for="telephoneInput">Telefon</label>
+                <input type="text" class="form-control" id="telephoneInput" name="telefon" placeholder="Podaj telefon">
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary">Zamów</button>
+
+            </div>
+        </form>
+
+    </div>
+    <div th:if="${zamowienie.ksiazka.isEmpty()}" class="text-center">
+        <h2>Twoje zamówienie jest puste</h2>
+
+    </div>
+    <h2><a href="#" th:href="@{/}">Dodaj kolejną książkę do zamówienia</a></h2>
+</div>
+</body>
+</html>
