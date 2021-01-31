@@ -1,12 +1,9 @@
 insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka_Foto) VALUES (1, 'Mróz Remigiusz', 27.93, 'Kryminał, sensacja, thriller', 'Kontynuacja bestsellerowej Nieodnalezionej!
 Rok po ucieczce od męża Kasandra Reimann prowadzi spokojne, ustatkowane życie za granicą. Jest przekonana, że udało jej się zostawić wszystko za sobą – także konsekwencje tego, co zrobiła, by ratować siebie i dziecko. Do czasu. Pewnego dnia jej syn nie wraca do domu po wizycie u kolegi, a jedyny ślad prowadzi do Opola. Zrozpaczona matka zrobi wszystko, by odnaleźć dziecko, nawet jeśli będzie oznaczało to ponowne spotkanie z człowiekiem, którego życie zniszczyła.
 Damian Werner tymczasem wprowadza się do nowego mieszkania, wciąż starając się zapomnieć o wszystkim, co spotkało go rok temu. Przeglądając jednak rzeczy zostawione przez poprzedniego właściciela, trafia na starą kasetę VHS, która rzuca nowe światło na jego przeszłość…',
-                                                                                               'Nieodgadniona',
-                                                                                               'Kontynuacja bestsellerowej Nieodnalezionej!
-                                                                                               Rok po ucieczce od męża Kasandra Reimann prowadzi spokojne, ustatkowane życie za granicą. Jest przekonana, że udało jej się zostawić wszystko za sobą – także konsekwencje tego, co zrobiła, by ratować siebie i dziecko.', 'https://ecsmedia.pl/c/nieodgadniona-b-iext53817927.jpg');
-
-
-
+    'Nieodgadniona',
+    'Kontynuacja bestsellerowej Nieodnalezionej!
+    Rok po ucieczce od męża Kasandra Reimann prowadzi spokojne, ustatkowane życie za granicą. Jest przekonana, że udało jej się zostawić wszystko za sobą – także konsekwencje tego, co zrobiła, by ratować siebie i dziecko.', 'https://ecsmedia.pl/c/nieodgadniona-b-iext53817927.jpg');
 insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka_Foto) VALUES (2,
                                                                                                '
                                                                                                Morris Heather
@@ -22,10 +19,6 @@ insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka
                                                                                                'Tatuażysta z Auschwitz
                                                                                                ', 'Prawdziwa historia Lalego Sokołowa, który tatuował numery seryjne na ramionach osadzonych w Auschwitz. Milczał przez ponad pół wieku, tuż przed śmiercią zdecydował się opowiedzieć swoje losy. Tatuażysta z Auschwitz to właśnie opowieść Sokołowa, którą usłyszała i spisała autorka.
 Lale Sokołow trafił do obozu w Auschwitz w 1942 roku.', 'https://ecsmedia.pl/c/tatuazysta-z-auschwitz-b-iext52712249.jpg');
-
-
-
-
 insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka_Foto) VALUES (3,
                                                                                                'Paris B.A.', 24.99 ,
 
@@ -45,7 +38,6 @@ insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka
                                                                                                'Powieść autorki bestsellerowych thrillerów „Za zamkniętymi drzwiami” oraz „Na skraju załamania”.
                                                                                                Ona zniknęła
                                                                                                Fin i Layla, młodzi i nieprzytomne w sobie zakochani, wyjeżdżają na wakacje do Francji. W drodze zatrzymują się w nocy na parkingu i kiedy Fin wraca z toalety, jego dziewczyny nigdzie nie ma.','https://ecsmedia.pl/c/pozwol-mi-wrocic-p-iext53736506.jpg');
-
 insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka_Foto) VALUES (4,
                                                                                                'Obama Michelle', 38.99 ,
                                                                                                'Biografie i autobiografie',
@@ -68,7 +60,6 @@ insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka
                                                                                               ',
                                                                                                'Czapkins. Historia Tomka Mackiewicza
                                                                                                ','Przez całe życie Tomek Mackiewicz, "Czapkins", niemożliwe zmieniał w realne. Kiedy wyznaczył sobie cel – jako pierwszy człowiek wejdzie zimą na wierzchołek Nanga Parbat (8125 m n.p.m.) – do wyścigu przystąpiły największe gwiazdy himalaizmu, ale Czapkins nie chciał się ścigać.', 'https://ecsmedia.pl/c/czapkins-historia-tomka-mackiewicza-p-iext53233648.jpg');
-
 insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka_Foto) VALUES (6,
                                                                                                'Puzyńska Katarzyna', 27.93,
                                                                                                'Kryminał, sensacja, thriller',
@@ -78,22 +69,17 @@ insert into ksiazka(id, autor, cena, kategoria, opis, tytul, opis_Short, ksiazka
                                                                                                'Rodzanice. Lipowo. Tom 10
                                                                                                ','Zbliża się krwawy superksiężyc. Mieszkańcy maleńkich Rodzanic boją się, że ta niezwykła pełnia uwolni z dawna uśpionego demona. Tymczasem na zamarzniętym, smaganym zimowym wichrem jeziorze znaleziono ciało zamordowanej dziewczyny. Jest przykryta kocem. Gdyby nie to, że jakieś zwierzę poszarpało jej rękę, wyglądałaby, jakby spokojnie spała.', 'https://ecsmedia.pl/c/rodzanice-lipowo-tom-10-p-iext53727845.jpg');
 
-// tabela zamowienie
-
-insert into zamowienia_klienta
-(id, address, stan, telefon) VALUES   (1, 'Długa 1 Warszawa', 'doRealizacji', '123456789' );
-
+insert into ZAMOWIENIA_KLIENTA(id, address, stan, telefon) VALUES (1, 'Długa 1 Warszawa', 'doRealizacji', '123456789' );
 insert into zamowienia_klienta
 (id, address, stan, telefon) VALUES   (2, 'Krakowskie Przedmieście 1, Warszawa', 'wTrakciePakowania', '987654321' );
 insert into zamowienia_klienta
 (id, address, stan, telefon) VALUES   (3, 'Saperska 2 , Kraków', 'wTrakciePakowania', '111222333' );
-
 insert into zamowienia_klienta
 (id, address, stan, telefon) VALUES   (4, 'Legnicka 7 , Wrocław', 'wyslaneDoCzytelnika', '111122223' );
 insert into zamowienia_klienta
 (id, address, stan, telefon) VALUES   (5, 'Bracka 8 , Gdynia', 'wyslaneDoCzytelnika', '112233445' );
 
-insert into ZAMOWIONE_KSIAZKI  (zamowienie_id, ksiazka_id) values
+insert into ZAMOWIONE_KSIAZKI(zamowienie_id, ksiazka_id) values
 (1, 1),
 (1, 2),
 (1, 3),
@@ -107,3 +93,4 @@ insert into ZAMOWIONE_KSIAZKI  (zamowienie_id, ksiazka_id) values
 (5, 3),
 (5, 2),
 (5, 1);
+
